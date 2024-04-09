@@ -11,13 +11,10 @@ import java.net.URL;
 public class RentApplication extends Application {
     @Override
     public void start(Stage stage) throws IOException {
-
         URL resource = RentApplication.class.getResource("rent.fxml");
         FXMLLoader fxmlLoader = new FXMLLoader(resource);
-
-
         Scene scene = new Scene(fxmlLoader.load(), 363, 349);
-        stage.setTitle("Hello!");
+        stage.setTitle("Rent Calculator");
         stage.setScene(scene);
         stage.show();
     }

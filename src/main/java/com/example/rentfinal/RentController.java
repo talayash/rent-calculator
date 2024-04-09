@@ -47,6 +47,8 @@ public class RentController {
             double waterDiff = (_waterCurrentAmount - _waterLastAmount);
 
             String res = "Electrical Diff: " + electricalDiff + ", to pay: " + electricalDiff*_electricalRate + ", Water Diff: " + waterDiff + ". to pay: " + waterDiff*_waterRate + ", Total with rent: " + (electricalDiff*_electricalRate + waterDiff*_waterRate + 2500);
+            System.out.println(res);
+            result.setVisible(true);
             result.setText(res);
 
         } catch (NumberFormatException e) {
